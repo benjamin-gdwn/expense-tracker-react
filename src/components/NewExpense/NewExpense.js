@@ -12,6 +12,7 @@ const newExpense = (props) => {
       // adding a new key value pair
       id: Math.random().toString(),
     };
+    console.log(enteredExpenseData);
     // adding the expenseData as an argument to a prop passed down to us from App.js
     props.onAddExpenseHandler(expenseData);
   };
