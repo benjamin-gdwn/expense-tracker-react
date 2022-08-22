@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ExpenseFilter.css";
 
 const ExpensesFilter = (props) => {
   const filterHandler = (e) => {
     props.onChangeFilter(e.target.value);
   };
+
+  
 
   return (
     <div className="expenses-filter">
