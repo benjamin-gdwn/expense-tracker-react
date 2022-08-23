@@ -31,7 +31,7 @@ const ExpenseForm = (props) => {
     // variable to store all the data as an object
     const expenseData = {
       title: newTitle,
-      amount: newAmount,
+      amount: +newAmount,
       date: new Date(newDate),
     };
     // step two of passing the object above up into the new expense as props argument passed down from newExpense
